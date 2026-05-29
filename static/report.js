@@ -134,6 +134,7 @@
 
     visibleRows
       .sort((a, b) => {
+        if (sort === "number-asc") return (a.querySelector("td")?.textContent.trim() || "").localeCompare(b.querySelector("td")?.textContent.trim() || "");
         if (sort === "score-asc") return Number(a.dataset.score) - Number(b.dataset.score);
         if (sort === "review-desc") return Number(b.dataset.review) - Number(a.dataset.review) || Number(b.dataset.score) - Number(a.dataset.score);
         if (sort === "title-asc") return (a.dataset.title || "").localeCompare(b.dataset.title || "", "zh-Hant");
