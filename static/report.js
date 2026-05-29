@@ -13,7 +13,7 @@
 
   const styleSelects = document.querySelectorAll("[data-archetype-style-select]");
   const archetypeImages = document.querySelectorAll("[data-archetype-img]");
-  const storedStyle = window.localStorage?.getItem("archetypeImageStyle");
+  const storedStyle = window.localStorage?.getItem("archetypeImageStyle_v2");
   const defaultStyle = "style03";
 
   function scheduleArchetypeTrim(image) {
@@ -109,7 +109,7 @@
     });
     root.dataset.archetypeStyle = styleId;
     if (persist) {
-      window.localStorage?.setItem("archetypeImageStyle", styleId);
+      window.localStorage?.setItem("archetypeImageStyle_v2", styleId);
     }
   }
 

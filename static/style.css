@@ -904,6 +904,8 @@ body.dimension-sheet-open .dimension-sheet-scrim{opacity:1;pointer-events:auto}
 }
 @media(max-width:620px){
   .site-header{align-items:flex-start;flex-direction:column}
+  .archetype-style-control{min-height:44px}
+  .archetype-style-control select{min-height:44px;font-size:16px;padding:8px 30px 8px 10px}
   .report{width:min(100% - 20px,1180px);padding-top:14px}
   .hero,.ambient-panel,.panel{padding:18px;border-radius:14px}
   .student-insight-card{min-height:auto;padding:22px}
