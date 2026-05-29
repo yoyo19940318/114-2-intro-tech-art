@@ -14,7 +14,7 @@
   const styleSelects = document.querySelectorAll("[data-archetype-style-select]");
   const archetypeImages = document.querySelectorAll("[data-archetype-img]");
   const storedStyle = window.localStorage?.getItem("archetypeImageStyle");
-  const defaultStyle = styleSelects[0]?.value || "style01";
+  const defaultStyle = "style03";
 
   function scheduleArchetypeTrim(image) {
     if (!image) return;
